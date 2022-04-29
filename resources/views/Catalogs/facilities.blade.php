@@ -57,7 +57,42 @@
                             </div>
                         </div>
                     </div>
-                </template>
+                </div>
+                <div class="box">
+                    <div class="columns">
+                        <!-- Title -->
+                        <div class="column is-one-fifths">
+                            Furniture
+                        </div>
+                        <!-- Excerpt -->
+                        <div class="column is-three-fifths">
+                            Order furniture for your workplace
+                        </div>
+                        <!-- Link Button -->
+                        <div class="column is-one-fifth">
+                            <a class="button is-link is-pulled-right">🠖</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="columns">
+                        <!-- Title -->
+                        <div class="column is-one-fifths">
+                            Handyman
+                        </div>
+                        <!-- Excerpt -->
+                        <div class="column is-three-fifths">
+                            Order handyman service
+                        </div>
+                        <!-- Link Button -->
+                        <div class="column is-one-fifth">
+                            <a class="button is-link is-pulled-right">🠖</a>
+                        </div>
+                    </div>
+                </div>
+{{--                @foreach(item)--}}
+{{--                show box for every entry--}}
+{{--                @endforeach--}}
             </div>
         </div>
     </div>
