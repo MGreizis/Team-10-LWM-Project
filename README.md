@@ -1,99 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# An Intranet project
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+The whole app is built with Laravel and Bulma. Below you can find a couple of pictures from the site, as, unfortunately, a live demo is currently not available.
 
-## Testing
-### Test Plan
+## A page where an admin can monitor the status of various integrated systems
+![Screenshot_1](https://user-images.githubusercontent.com/89737867/225086624-939f59e7-1f1e-4194-9846-6dd27b48ba2e.png)
 
-The following user stories are tested in this Laravel application:
-1. "As an admin I want to be able to register a new user"
-3. "As a user I can update my account information such as my email and username"
+## An index page to a Catalog base, where employees can make various requests
+![Screenshot_2](https://user-images.githubusercontent.com/89737867/225087017-31b8ba4a-9d1e-40e2-bb95-848dfcd4e3f2.png)
 
-The user stories are tested within the application for the following scenarios (numbers refer to the user stories above):
-1. An admin can create a new user which is saved in the database when inputting valid data into the form [High Level Testing]. When the data is invalid, the user should not be saved into the database and the session has an error [High Level Testing]. When an admin tries to create a user with an email that is already in use, the user should not be duplicated [Low Level Testing]. 
-2. As a user I can update my user information with valid data and the updated data is updated in the database [High Level Testing]. When my input is invalid the database should not be updated [High Level Testing]. Passwords are excluded from the testing here, since password updating is handled through a different page.
+**Within the Catalog base, if an employee does not know where to find something, there is a "Need help?" button that could help them**
+![image](https://user-images.githubusercontent.com/89737867/225088485-58af2555-466c-4079-bcda-eb45ce94a0ce.png)
 
-### Test evaluation
-The tests in this application apply to two features. In the following the coverage of the tests is listed:
-- create user
-  - Covers: the whole process of registration a new user and check if the new user actually exist in the database
-- wrong registration input
-  - Covers: role_ids that doesn't exist and empty fields when submitting
-  - Doesn't cover: wrongly spelled emails
-- user duplication
-  - Covers: if a duplicated user can be created
-  - Doesn't cover: how the database would handle such event
-- update account
-  - Covers: the whole process of a user updating his profile information with valid data
-  - Doesn't cover: Updating a users' password (different page)
-- update account with wrong data
-  - Covers: input wrong data won't be pushed to database
-  - Doesn't cover: wrong password data (different page)
+**Here is how the IT Catalog page looks like, for example**
+![image](https://user-images.githubusercontent.com/89737867/225087391-90f15ca6-0a5d-4f60-af02-d8219f7dc442.png)
 
-### Test results
-If everything is correctly setup, the tests should run without any errors and should look something like this:
+## This image showcases a Knowledge base, where employees can turn to find answers to commonly asked questions
+![Screenshot_3](https://user-images.githubusercontent.com/89737867/225087550-c541ef2a-5fa9-4e28-9f9b-be3f92a7460f.png)
 
-<img src="https://i.ibb.co/7KC8w0L/Screenshot-20220625-175645.png" alt="Screenshot-20220625-175645" border="0">
-
-(Tests run automatically on every pull request to main)
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## A ticketing system is also implemented, where employees can send in tickets with issues and the admins can overlook them
+![image](https://user-images.githubusercontent.com/89737867/225087878-36945109-96d1-4538-8e38-af153f54d41d.png)
